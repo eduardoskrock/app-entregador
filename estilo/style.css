@@ -1,41 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine&display=swap');
+
 
 *{
-    margin: 0;
-    padding: 0;
-}
+    margin: 0 auto;
+    padding: 0;}
 
 body{
-    background: #F5F5F5;
-}
-header{
-    position: absolute;
-    width: 1440px;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    background: #626262;
-}
+    background: #F5F5F5;}
 
+/*início cabeçalho*/
+header{
+    width: 100vw;
+    height: 30px;
+    padding: 10px;}
+
+.menu{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #011C5A;
+  font-size: 20px;
+  font-family: 'Jura';
+  padding: 5px;}
+
+.menu a:hover{
+    color: white;
+    border-bottom: 4px solid rgba(187, 8, 8);
+}
 
 li{
     display: inline-block;
-}
+    list-style: none;}
+
 a{
+    padding: 20px;
+    border-radius: 1px;
     color: white;
     text-decoration: none;
-    position: relative;
-    top: 40px;
+    text-shadow: 1px 1px black;
+    margin-left: 10px;}
 
+a:hover{
+    color: #F24116;
 }
-.main-page{
+/*final cabeçalho*/
+
+
+/*página inicial*/
+.main-first-page{
     width: 100vw;
-    height: 110vh;
-    
-}
+    height: 100vh;
+    padding: 30px;}
 
-.txt-inicial{
-    background: #D9D9D9;
+.txt-welcome{
+    background: linear-gradient(to left, #F24116, #BD392C, #F19D52);
     position: absolute;
     width: 680px;
     height: 114px;
@@ -49,18 +69,17 @@ a{
     font-size: 30px;
     line-height: 43px;
     text-align: center;
+    color: #FFF;
+    text-shadow: 1px 3px black;}
 
-}
-
-#moto{
+#icon-moto{
     position: absolute;
     width: 151px;
     height: 143px;
     left: 45px;
     top: -20px;
-
 }
-#modal-moto-txt{
+.card-moto p{
     position: absolute;
     width: 265px;
     height: 77px;
@@ -72,36 +91,28 @@ a{
     font-size: 36px;
     line-height: 43px;
     text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px black;}
 
-    color: #000000;
-
-}
-.modal-moto{
+.card-moto{
     position: absolute;
     width: 223px;
     height: 207px;
     left: 122px;
     top: 351px;
-    background: #E3814A;
+    background: #F24116;
     border-radius: 20px 2px 20px 2px;
-    cursor: pointer;
-}
-
-.modal-moto:hover{
-    background: rgb(179, 169, 24);
-}
+    cursor: pointer;}
 
 
-#carro{
+#icon-carro{
     position: absolute;
     width: 150px;
     height: 133px;
     left: 40px;
-    top: -18px;
+    top: -18px;}
 
-}
-
-#modal-carro-txt{
+.card-carro p{
     position: absolute;
     width: 265px;
     height: 77px;
@@ -113,160 +124,230 @@ a{
     font-size: 36px;
     line-height: 43px;
     text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px black;}
 
-    color: #000000;
-
-}
-.modal-carro{
+.card-carro{
     position: absolute;
     width: 223px;
     height: 207px;
     left: 365px;
     top: 351px;
-    background: #E3944A;
-    border-radius: 3px 20px 3px 20px;
-}
+    background: #BD392C;
+    border-radius: 3px 20px 3px 20px;}
 
-#van{
+#icon-van{
     position: absolute;
     width: 140px;
     height: 90px;
     left: 40px;
-    top: 4px;
-}
+    top: 4px;}
 
-.modal-van{
+.card-van{
     position: absolute;
     width: 223px;
     height: 207px;
     left: 608px;
     top: 351px;
-    background: #E3B84A;
-    border-radius: 20px 3px 20px 3px;
-    }
+    background: #F19D52;
+    border-radius: 20px 3px 20px 3px;}
 
-#modal-van-txt{
+.card-van p{
     position: absolute;
     width: 265px;
     height: 77px;
     left: -20px;
     top: 120px;
-
     font-family: 'Jura';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px black;}
 
-    color: #000000;
-
-}
-
-.inferior{
+.card-inferior-horizontal{
     position: absolute;
     width: 710px;
     height: 62px;
     left: 122px;
     top: 620px;
-
     background: #D9D9D9;
-    border-radius: 10px;
-}
+    border-radius: 10px;}
+
+.card-inferior-horizontal p{
+    font-family: 'Jura';
+    color: #E3814A;
+    font-size: 20px;
+    margin: 10px 0 10px 40px;}
+
+span{
+    color: #011C5A;}
+
 img{
     position: absolute;
-    width: 398px;
-    height: 560px;
+    width: 374px;
+    height: 520px;
     left: 879px;
-    top: 133px;
-    border-radius: 20px;
-}
+    top: 165px;
+    border-radius: 20px 0 20px 0;}
 
-.container{
+.box-explicacao{
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
-    padding: 0 20px;
-}
+    padding: 0 20px;}
 
-section.module p{
+.box-explicacao h1{
+    font-family: 'Jura';
+    font-size: 40px;
+    margin-left: -100px;}
+
+.box-explicacao p{
+    font-family: 'Jura';
+    color: #E3814A;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: -120px;
+    line-height: 40px;}
+
+#img-entregador-box-1 img{
+    position: relative;
+    top: -450px;
+    left: 900px;
+    z-index: 6;}
+
+.module p{
+    margin-bottom: 40px;}
+
+.module:last-child{
+    margin-bottom: 0;}
+
+.module h1{
     margin-bottom: 40px;
-}
+    font-size: 30px;}
 
-section.module:last-child{
-    margin-bottom: 0;
-}
-
-section.module h2{
-    margin-bottom: 40px;
-    font-size: 30px;
-}
-
-section.module.content{
-    padding: 40px 0;
-    background-color: #ece7d5;
-}
-
-
-section.module.content{
+.module.content{
     height: 60vh;
     padding: 40px 0;
-    background-color: #ece7d5;
-}
+    background-color: #ece7d5;}
 
-section.module.parallax{
+.module.parallax{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh !important; /*determina que o conteudo fique na tela inteira forçadamente*/
+    height: 80vh !important; /*determina que o conteudo fique na tela inteira forçadamente*/
     width: 100%;
     position: relative;
     overflow: hidden;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover;
-}
+    background-size: cover;}
 
-section.module.parallax:after{
+.module.parallax:after{
     content: "";
     height: 150%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to top, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 40%, #000 100%)
-}
+    background: linear-gradient(to top, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 40%, #000 100%)}
 
-section.module.parallax:before{
+.module.parallax:before{
     content: "";
     height: 150%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 40%, #000 100%)
-}
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 40%, #000 100%)}
 
-section.module.parallax h1{
-    color: rgb(241, 110, 34);
+.module.parallax h1{
+    color: rgb(238, 233, 230);
     text-align: center;
+    font-family: 'Alfa Slab One', cursive;
     font-size: 50px;
     z-index: 50;
-    text-shadow: 3px 5px black;
-    text-transform: uppercase;
+    text-shadow: 3px 5px black;}
+
+.module.parallax-1{
+    background-image: url(https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+
+.module.parallax-2{
+    background-image: url(https://images.pexels.com/photos/6868623/pexels-photo-6868623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    border-style: none;
+    cursor: pointer;
+    padding: 10px;
+    
 }
 
-section.module.parallax-1{
-    background-image: url(https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-}
+.main-quadrado{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(20, 8vw);
+    grid-gap: 1.5rem;}
 
-section.module.parallax-2{
-    background-image: url(https://images.pexels.com/photos/6868623/pexels-photo-6868623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-}
-
-footer{
-    background-color: black;
-    height: 100px;
-    color: white;
+.quadrado{
+    border-radius: 10px;
     text-align: center;
-}
+    margin-left: -60px;}
+
+.main-quadrado h1{
+    color: #024D8E;
+    position: relative;
+    top: 20px;
+    left: 120px;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 1px 2px black;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;}
+
+.quadrado:hover{
+    background-color: red;
+    transition: 0.6s;}
+
+.quadrado p{
+    color: white;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 60px;
+    line-height: 1.8rem;
+    padding: 10px;
+    text-shadow: 1px 1px black;}
+
+.quadrado-1 {
+    overflow-y: auto;
+    background-color: #F19D52;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;}
+
+  
+  .quadrado-2 {
+    overflow-y: auto;
+    background-color: #BD392C;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;}
+  
+  .quadrado-3 {
+    overflow-y: auto;
+    background-color: #F24116;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 2;}
+  
+
 
