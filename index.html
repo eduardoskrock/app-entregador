@@ -10,76 +10,115 @@
 </head>
 <body>
 <main>
-    <header>
+    <!-- Início Cabeçalho -->
+    <header class="menu">
         <nav>
             <ul>
-                <li><a href="">Fale Conosco</a></li>
-                <li><a href="">Menu</a></li>
+                <li><a href="#">Dvery</a></li>
+                <li><a href="#">Seja um entregador</a></li>
+                <li><a href="#">Seja um parceiro</a></li>
+                <li><a href="#">Fale conosco</a></li>
             </ul>
         </nav>
-
     </header>
-    
+    <!-- Final Cabeçalho -->
+
+    <!-- Início das sessões do site-->
+
+    <!-- Sessão inicial com os modais de entrega -->
     <section>
-    <div class="main-page">
-        <div class="txt-inicial">
-            <h1>Olá! Seja bem-vindo à Delivery :) <br>
-                Escolha seu modal e faça seu cadastro
-            </h1>
+    <div class="main-first-page">
+        <div class="txt-welcome">
+            <h1>Olá! Seja bem-vindo à Delivery<br>
+                Bora começar a realizar entregas?</h1>
         </div>
-        <div class="modal-moto">
-            <img src="imagens/ic_round-delivery-dining.svg" alt="Moto" id="moto">
-            <p id="modal-moto-txt">Motocicleta</p>
+        
+        <div class="card-moto">
+            <img src="imagens/ic_round-delivery-dining.svg" alt="Moto" id="icon-moto">
+            <p>Motocicleta</p>
 
         </div>
-        <div class="modal-carro">
-            <img src="imagens/clarity_car-solid.png" alt="" id="carro">
-            <p id="modal-carro-txt">Carro</p>
+        <div class="card-carro">
+            <img src="imagens/clarity_car-solid.png" alt="Car" id="icon-carro">
+            <p>Carro</p>
         </div>
-        <div class="modal-van">
-            <img src="imagens/mdi_van-utility.png" alt="" id="van">
-            <p id="modal-van-txt">Van</p>
+        <div class="card-van">
+            <img src="imagens/mdi_van-utility.png" alt="Van" id="icon-van">
+            <p>Van</p>
         </div>
-        <div class="inferior">
-
+        <div class="card-inferior-horizontal">
+            <p>O cliente pede. A loja, separa. Você coleta e entrega.</p>
         </div>
         <figure>
             <img src="imagens/pexels-photo-4392890.jpeg" alt="entregador">
         </figure>
     </div>
     </section>
+    <!-- Final dos cards com os modais de entrega e breve apresentação da plataforma-->
+
+    <!-- Início do primeiro efeito parallax da página-->
     <div class="wrapper">
     <section class="module parallax parallax-1">
-        <h1>Quer faturar uma grana semanalmente fazendo entregas?</h1>
+        <h1>Quer faturar uma grana diariamente fazendo entregas?</h1>
     </section>
+
+     <!-- Final do primeiro parallax-->
+
+     <!-- Início da sessão de explicação após o primeiro parallax-->
+
     <section class="module content">
-            <div class="container">
-                <h2>Qualquer texto aqui..</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque cupiditate, natus reiciendis dolorem aperiam nostrum quidem explicabo iusto labore delectus nemo. Neque iure explicabo ipsa ducimus optio omnis, est dolores.
-                </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error natus possimus atque aliquid voluptatem quae libero, cupiditate adipisci non a inventore perferendis magni omnis sed odio unde! Aperiam, earum nemo.</p>
+            <div class="box-explicacao">
+                <h1>Conheça nossos diferenciais</h1>
+                <p>1. Vários galpões de coleta espalhados pela cidade</p>
+                <p><span>2. Temos planos de comissão específico para cada modal de entrega</span></p>
+                <p>3. Nosso suporte ao entregador é tão rápido que nenhum problema te deixará frustrado</p>
+            </div>
+            <!-- Final da sessão de explicação após o primeiro parallax-->
+            
+            <!-- imagem SVG ao lado direito do texto de explicação-->
+            <div id="img-entregador-box-1">
+                <img src="imagens/in-no-time-animate.svg" alt="entregador no destino da entrega">
             </div>
     </section>
 
+     <!-- Início do segundo efeito parallax-->
     <div class="wrapper">
         <section class="module parallax parallax-2">
-            <h1>Quer faturar uma grana semanalmente fazendo entregas?</h1>
+            <h1>Ganhos diários</h1>
         </section>
-        <section class="module content">
-                <div class="container">
-                    <h2>Qualquer texto aqui..</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque cupiditate, natus reiciendis dolorem aperiam nostrum quidem explicabo iusto labore delectus nemo. Neque iure explicabo ipsa ducimus optio omnis, est dolores.
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error natus possimus atque aliquid voluptatem quae libero, cupiditate adipisci non a inventore perferendis magni omnis sed odio unde! Aperiam, earum nemo.</p>
-                </div>
-        </section>
+    <!-- Final do segundo efeito parallax-->
 
-    <footer>
-        <ul>
-            <li>Site criado por Eduardo Skrock</li>
-        </ul>
-    </footer>
-    
+     <!-- Início dos inputs para envio dos dados para cadastramento na plataforma-->
+        <section class="module content">
+                <form class="container container-card">
+                    <div class="card">
+                        <input type="text" name="Nome" value="Nome" id="card1">
+                        <input type="email" name="E-mail" value="E-mail" id="card2">
+                        <input type="date" name="Nascimento" value="Nascimento" id="card3">
+                    </div>
+                </form>
+        </section>
+    <!-- Final dos inputs para envio dos dados para cadastramento na plataforma-->
+    </div>
+
+    <!-- Início dos cards com as vantagens da plataforma-->
+        <section>
+            <div class="main-quadrado">
+                <h1>Como funciona</h1>
+            <div class="quadrado quadrado-1">
+                <p>1</p>
+            </div>
+
+            <div class="quadrado quadrado-2">
+                <p>2</p>
+            </div>
+
+            <div class="quadrado quadrado-3">
+                <p>3</p>
+            </div>
+        </div>
+        </section>
+     <!-- Final dos cards com as vantagens da plataforma-->
 </main>
 </body>
 </html>
