@@ -259,7 +259,7 @@ img{
 
 .module.parallax:before{
     content: "";
-    height: 150%b;
+    height: 150%;
     width: 100%;
     position: absolute;
     z-index: 8;
