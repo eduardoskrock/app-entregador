@@ -1,456 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-*{
-    margin: 0 auto;
-    padding: 0;}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+:root{
+    --color-fundo: #FEF1F1;
+    --color-pink: #E70663;
+    --color-gray: #71777F;
+    --color-blue: #163963; 
 }
 
 body{
-    background: #F5F5F5;}
+    margin: 0 auto;
+    padding: 0;
+}
 
 /*início cabeçalho*/
 header{
-    width: 100vw;
-    height: 30px;
-    padding: 10px;}
-
-.menu{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  background-color: #011C5A;
-  font-size: 20px;
-  font-family: 'Jura';
-  padding: 5px;}
-
-.menu a:hover{
-    color: white;
-    border-bottom: 4px solid rgba(187, 8, 8);
-}
-
-li{
-    display: inline-block;
-    list-style: none;}
-
-a{
-    padding: 20px;
-    border-radius: 1px;
-    color: white;
-    text-decoration: none;
-    text-shadow: 1px 1px black;
-    margin-left: 10px;}
-
-a:hover{
-    color: #F24116;
-}
-/*final cabeçalho*/
-
-
-/*página inicial*/
-.main-first-page{
-    width: 100vw;
-    height: 100vh;
-    padding: 30px;}
-
-.txt-welcome{
-    background: linear-gradient(to left, #F24116, #BD392C, #F19D52);
-    position: absolute;
-    width: 680px;
-    height: 114px;
-    left: 125px;
-    top: 164px;
-    padding: 10px;
-    border-radius: 20px 3px 20px 3px;
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 43px;
-    text-align: center;
-    color: #FFF;
-    text-shadow: 1px 3px black;}
-
-#icon-moto{
-    position: absolute;
-    width: 151px;
-    height: 143px;
-    left: 45px;
-    top: -20px;
-}
-.card-moto p{
-    position: absolute;
-    width: 265px;
-    height: 77px;
-    left: -20px;
-    top: 120px;
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    color: #FFF;
-    text-shadow: 1px 1px black;}
-
-.card-moto{
-    position: absolute;
-    width: 223px;
-    height: 207px;
-    left: 122px;
-    top: 351px;
-    background: #F24116;
-    border-radius: 20px 2px 20px 2px;
-    cursor: pointer;}
-
-
-#icon-carro{
-    position: absolute;
-    width: 150px;
-    height: 133px;
-    left: 40px;
-    top: -18px;}
-
-.card-carro p{
-    position: absolute;
-    width: 265px;
-    height: 77px;
-    left: -20px;
-    top: 120px;
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    color: #FFF;
-    text-shadow: 1px 1px black;}
-
-.card-carro{
-    position: absolute;
-    width: 223px;
-    height: 207px;
-    left: 365px;
-    top: 351px;
-    background: #BD392C;
-    border-radius: 3px 20px 3px 20px;}
-
-#icon-van{
-    position: absolute;
-    width: 140px;
-    height: 90px;
-    left: 40px;
-    top: 4px;}
-
-.card-van{
-    position: absolute;
-    width: 223px;
-    height: 207px;
-    left: 608px;
-    top: 351px;
-    background: #F19D52;
-    border-radius: 20px 3px 20px 3px;}
-
-.card-van p{
-    position: absolute;
-    width: 265px;
-    height: 77px;
-    left: -20px;
-    top: 120px;
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    color: #FFF;
-    text-shadow: 1px 1px black;}
-
-.card-inferior-horizontal{
-    position: absolute;
-    width: 710px;
-    height: 62px;
-    left: 122px;
-    top: 620px;
-    background: #D9D9D9;
-    border-radius: 10px;}
-
-.card-inferior-horizontal p{
-    font-family: 'Jura';
-    color: #E3814A;
-    font-size: 20px;
-    margin: 10px 0 10px 40px;}
-
-span{
-    color: #011C5A;}
-
-img{
-    position: absolute;
-    width: 374px;
-    height: 520px;
-    left: 879px;
-    top: 165px;
-    border-radius: 20px 0 20px 0;}
-
-.box-explicacao{
     width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;}
-
-.box-explicacao h1{
-    font-family: 'Jura';
-    font-size: 40px;
-    margin-left: -100px;}
-
-.box-explicacao p{
-    font-family: 'Jura';
-    color: #E3814A;
-    font-size: 20px;
-    margin-top: 40px;
-    margin-left: -120px;
-    line-height: 40px;}
-
-#img-entregador-box-1 img{
-    position: relative;
-    top: -450px;
-    left: 900px;
-    z-index: 6;}
-
-.module p{
-    margin-bottom: 40px;}
-
-.module:last-child{
-    margin-bottom: 0;}
-
-.module h1{
-    margin-bottom: 40px;
-    font-size: 30px;}
-
-.module.content{
-    height: 60vh;
-    padding: 40px 0;
-    background-color: #ece7d5;}
-
-.module.parallax{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh !important; /*determina que o conteudo fique na tela inteira forçadamente*/
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;}
-
-.module.parallax:after{
-    content: "";
-    height: 150%;
-    width: 100%;
-    position: absolute;
-    z-index: 8;
-    background: linear-gradient(to top, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 40%, #000 100%)}
-
-.module.parallax:before{
-    content: "";
-    height: 150%;
-    width: 100%;
-    position: absolute;
-    z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 40%, #000 100%)}
-
-.module.parallax h1{
-    color: rgb(238, 233, 230);
-    text-align: center;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 50px;
-    z-index: 50;
-    text-shadow: 3px 5px black;}
-
-.module.parallax-1{
-    background-image: url(https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
-
-.module.parallax-2{
-    background-image: url(https://images.pexels.com/photos/6868623/pexels-photo-6868623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
-
-
-
-.main-cadastro{
-    width: 100vw;
-    height: 100vh;
-    display: flex;}
-
-.cadastramento{
-    width: 50vw;
-    height: 99.6vh;
-    display: flex;
-    align-content: center;
-    background-color: rgb(64, 64, 64);
-    position: relative;}
-
-.txt-cadastramento{
-    width: 50vw;
-}
-
-.titulo-cadastramento{
-    font-size: 50px;
-    font-family: 'jura';
-    color: white;
-    margin-top: 150px;
-    padding: 20px;
-}
-
-
-.text-cadastramento p{
-    font-size: 20px;
-    margin-top: 50px;
-    margin-left: 20px;
-    line-height: 30px;
-    font-family: 'Jura';
-    color: white;
-    text-shadow: 1px 2px black;
-}
-
-#foto-frutas{
-    width: 80vw;
-    height: 100vh;
-    top: -199px;
-    left: 500px;
-}
-
-.cards-cadastramento-main{
-    width: 50%;
-    height: 100vh;
-    background-color: #fff;
-    border-style: none;
-    padding: 10px;
-    outline: none;
-}
-
-.card-cadastro{
-    width: 100%;
-
-}
-
-
-.cards{
-    background-color: rgb(71, 71, 71, 0.5);
-    width: 30vw;
-    height: 90vh;
-    position: relative;
-    top: 10px;
-    left: 200px;
-    color: white;
-    border-radius: 10px;
-}
-.cards h1{
-    background-color: gray;
-    border-radius: 10px 10px 0 0;
-    padding: 10px;
-    font-family: 'Jura';
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
-    text-shadow: 1px 1px black;
-}
-input{
-    background-color: rgba(210, 208, 208, 0.4);
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 100px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 15px;
-    border: none;
-    font-size: 15px;
-    color: white;
-}
-
-input::placeholder{
-    color: white;
-}
-
-button{
-    width: 50%;
-    margin-top: 90px;
-    position: absolute;
-    top: 380px;
-    left: 110px;
-    height: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    border: none;
-    background-color: #F24116;
-    font-size: 13px;
-    cursor: pointer;
-    float: right;
-    color: white;
-}
-
-button p{
-    text-align: center;
-    position: relative;
-    top: -5px;
-}
-
-.wrapper-slides{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-content: center;
-}
-
-.wrapper-container{
-    width: 100vw;
-    height: 100vh;
-    background-color: #F19D52;
+    height: 50px;
     
 }
 
-.slides__items{
+ul{
     display: flex;
-    justify-content: center;
-      
-}
-.slides__items h2{
-    padding: 10px;
-    margin-left: 10px; 
-    color: white;
-    text-shadow: 3px 2px black;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 36px;
+    gap: 10px;
+    justify-content: end;
+    margin-right: 10px;
 }
 
-.slides__1{
-    font-family: 'Changa One', cursive;
-    font-size: 30px;
-    width: 300px;
-    height: 70vh;
-    margin-top: 50px;
-    background-color: #392378;
-    border-radius: 5px;
+li{
+    list-style-type: none; 
+    margin-top: 8px; 
+
 }
-.slides__2{
-    font-family: 'Changa One', cursive;
-    font-size: 30px;
-    width: 300px;
-    height: 70vh;
-    margin-left: 50px;
-    margin-top: 50px;
-    background-color: #ffc847;
-    border-radius: 5px;
+
+li > a{
+    border-radius: 8px;
+    color: black;
+    font-family: 'Inter';
+    text-decoration: none;
+    text-transform: uppercase;
 }
-.slides__3{
-    font-family: 'Changa One', cursive;
+
+ul > button{
+    background: var(--color-gray);
+    width: 12%;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    font-family: 'Inter';
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: white;
+}
+
+
+/*início da primeira sessão*/
+
+.container__first{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapp__first{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side-wrap__first{ 
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.box-introduction-page__first{
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
     font-size: 30px;
-    width: 300px;
-    height: 70vh;
-    margin-left: 50px;
-    margin-top: 50px;
-    background-color: #157ef8;
-    border-radius: 5px;
+    line-height: 48px;
+}
+
+.pre-title__first{
+    background-color: var(--color-pink);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 10px;
+}
+.introduction-header__first{
+    line-height: 20px;
+    margin-left: 40px;
+}
+
+.paragraph-below-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+.color-title-principal{
+    color: var(--color-pink);
+}
+
+
+.button-left-side__first{
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--color-gray);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+.button-left-side__first a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+.right-side-wrap__first{
+    width: 50%;
+    height: 100%;
+}
+.figure-section-1 img{
+    width: 624px;
+    height: 518x;
+}
+
+
+.second-section{
+    width: 100vw;
+    height: 100vh;
+}
+.container__second{
+    display: flex;
+    gap: 5px;
+    gap: 5px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+    }
+
+
+.wrapp__second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapp__second h1{
+   font-size: 40px;
+   font-family: 'Inter';
+}
+
+.wrapp__second span{
+    color: var(--color-pink);
+}
+
+
+.container__second{
+    justify-content: space-evenly
+}
+.advantage-cads{
+    width: 20vw;
+    height: 20vh;
+    margin-top: 40px;
+}
+
+.advantage-cards__icons{
+    display: flex;
+    justify-content: space-around
+}
+
+.advantage-cads h3{
+    color: var(--color-pink);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter';
+}
+
+.advantage-cads p{
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 18px;
+}
+
+.container__third{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container__third{
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+.title-principal__third{
+    width: 50vw;
+}
+
+
+.wrapper-chat-illustration{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 100vh;
+}
+
+.square{
+    display: flex;
+    flex-direction: row;
+
+}
+.square-1{
+    width: 430px;
+    height: 400px;
+    background: #E70663;
+}
+.square-2{
+    width: 430px;
+    height: 400px;
+    margin-left: 60px;
+    margin-top: 30px;
+    background: blue;
 }
