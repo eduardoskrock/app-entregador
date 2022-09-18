@@ -12,6 +12,29 @@ body{
     padding: 0;
 }
 
+h1{
+    font-size: 40px;
+    font-family: 'Inter';
+}
+
+h3{
+    color: var(--color-pink);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter';
+}
+
+h4{
+    color: var(--color-pink);
+    font-size: 15px;
+    font-family: 'Inter';
+}
+p{
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+
 /*início cabeçalho*/
 header{
     width: 100%;
@@ -40,19 +63,30 @@ li > a{
     color: black;
     font-family: 'Inter';
     text-decoration: none;
-    text-transform: uppercase;
+    
 }
 
 ul > button{
-    background: var(--color-gray);
+    background: linear-gradient(to right, blue, purple
+);
     width: 12%;
-    padding: 10px;
+    height: 5vh;
     text-decoration: none;
     border: none;
     font-family: 'Inter';
     text-transform: uppercase;
     border-radius: 8px;
+    position: relative;
+    z-index: 999;
+    animation: coresDancantes 2s linear infinite;
     color: white;
+    cursor: pointer;
+}
+
+@keyframes coresDancantes {
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 
@@ -73,16 +107,14 @@ ul > button{
     display: flex;
     width: 50%;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 40px;   
 }
 
 .box-introduction-page__first{
     margin-left: 10px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
     font-size: 30px;
-    line-height: 48px;
 }
 
 .pre-title__first{
@@ -92,16 +124,17 @@ ul > button{
     text-transform: uppercase;
     border-radius: 8px;
     padding: 10px;
+    
 }
 .introduction-header__first{
-    line-height: 20px;
+    line-height: 1.2em;
     margin-left: 40px;
 }
 
 .paragraph-below-title{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
 }
 .color-title-principal{
@@ -110,16 +143,16 @@ ul > button{
 
 
 .button-left-side__first{
-    width: 30%;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: var(--color-gray);
-    color: white;
-    font-size: 20px;
+    background: var(--color-gray);
+    width: 25%;
+    height: 8%;
+    text-decoration: none;
+    border: none;
+    font-family: 'Inter';
     text-transform: uppercase;
     border-radius: 8px;
+    color: white;
     cursor: pointer;
-    border: none;
 }
 .button-left-side__first a{
     color: white;
@@ -132,7 +165,7 @@ ul > button{
 }
 .figure-section-1 img{
     width: 624px;
-    height: 518x;
+    height: 520px;
 }
 
 
@@ -142,11 +175,7 @@ ul > button{
 }
 .container__second{
     display: flex;
-    gap: 5px;
-    gap: 5px 20px; /* row-gap column gap */
-    row-gap: 10px;
-    column-gap: 20px;
-    }
+}
 
 
 .wrapp__second{
@@ -155,10 +184,7 @@ ul > button{
     align-items: center;
 }
 
-.wrapp__second h1{
-   font-size: 40px;
-   font-family: 'Inter';
-}
+
 
 .wrapp__second span{
     color: var(--color-pink);
@@ -179,57 +205,210 @@ ul > button{
     justify-content: space-around
 }
 
-.advantage-cads h3{
-    color: var(--color-pink);
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Inter';
+
+
+/*sessão 3*/
+
+
+.third-section{
+    background: var(--color-fundo);
 }
 
-.advantage-cads p{
-    font-family: 'Inter';
-    text-align: center;
-    font-size: 18px;
-}
 
-.container__third{
+.wrapper-container__third{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
-
 .container__third{
     display: flex;
-    width: 50vw;
-    height: 100vh;
+    width: 90vw;
+    height: 70vh;
 }
 
 
 .title-principal__third{
-    width: 50vw;
+    display: flex;
+    width: 60vw;
+    height: 80vh;
+}
+
+.chat-illustration{
+    display: flex;
+}
+
+.wrapper-chat-illustration{
+    
+    display: flex;
+    justify-content: flex-end;
+    width: 30vw;
+}
+.title-principal__third{
+    margin-left: 40px;
+    line-height: 1.0em;
+
+}
+
+.title__third{
+    line-height: 1.2em ;
+
+}
+
+.title__third span{
+    color: var(--color-pink);
+    line-height: 1.1em;
 }
 
 
-.wrapper-chat-illustration{
+
+
+.square-1{
+    width: 350px;
+    height: 350px;
+    background: var(--color-pink);
+    border-radius: 8px 0 0 0;
+}
+.square-2{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: var(--color-blue);
+    border-radius: 8px;
+}
+
+.chat-message-main{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    
+    
+}
+
+.chat-box__1, .chat-box__2, .chat-box__3 {
+    width: 28vw;
+    height: 20vh;
+    display: flex;
+}
+
+.chat-message__1 p, .chat-message__2 p, .chat-message__3 p{
+    font-size: 15px;
+    font-family: 'Inter';
+    margin-left: 10px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.chat-message__1, .chat-message__3 {
+    border-radius: 7px 7px 7px 0;
+}
+.chat-message__2{
+    border-radius: 7px 7px 0 7px;
+}
+
+.chat-message-avatar__1{
+    background-image: url(../../imagens/avatar-1.png);
+}
+.chat-message-avatar__2{
+    margin-left: 10px;
+}
+.chat-box__2{
+    flex-direction: row-reverse;
+}
+
+
+.chat-message__1, .chat-message__2, .chat-message__3{
+    width: 20vw;
+    height: 10vh;
+    background: var(--color-gray);}
+    
+.img-avatar{
+    width: 70px;
+    height: 64px;
+}
+
+/*início da quarta sessão*/
+
+
+/*lado esquerdo*/
+
+.third-section{
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+
+.container__fourth{
+    background: var(--color-fundo);
+    display: flex;
+    height: 100vh;
+}
+
+.title-principal__fourth{
+    width: 50vw;
+}
+
+.title-principal__fourth{
+    width: 50vw;
+    line-height: 10px;
+    
+}
+.fourth span{
+    color: var(--color-pink);
+}
+.fourth{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/*lado direito*/
+
+.cards-how-to-use-app{
+    display: flex;
     width: 50vw;
     height: 100vh;
 }
 
-.square{
+.container-cards{
+    width: 50vw;
     display: flex;
     flex-direction: row;
+    
+}
 
+.wrapper-cards{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   align-content: center;
 }
-.square-1{
-    width: 430px;
-    height: 400px;
-    background: #E70663;
+
+.cards{
+    color: white;
+    width: 20vw;
+    height: 40vh;
 }
-.square-2{
-    width: 430px;
-    height: 400px;
-    margin-left: 60px;
-    margin-top: 30px;
-    background: blue;
+
+.cards__1, .cards__2{
+    background: var(--color-blue);
+    border-radius: 8px;
+}
+
+.cards__1 h4, .cards__2 h4{
+    letter-spacing: 0.1rem;
+}
+
+.cards__3, .cards__4{
+    background: var(--color-pink);
+    border-radius: 8px;
+}
+
+.cards__3 span, .cards__4 span{
+    color: var(--color-blue);
+    letter-spacing: 0.1rem;
 }
